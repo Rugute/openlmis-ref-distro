@@ -23,7 +23,7 @@ services:
     depends_on: [consul]
 
   reference-ui:
-    image: openlmis/reference-ui:${OL_REFERENCE_UI_VERSION}
+    image: erugut/reference-ui
     env_file: settings.env
     depends_on: [consul]
     mem_limit: '1.3G'
